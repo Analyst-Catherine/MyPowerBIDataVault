@@ -13,8 +13,8 @@ Only death records have been analysed. Since Cholera has around 40% CFR, we can 
 
 Raw data in Swedish
 The data contains 248 rows and 8 columns. The column name include date of death, name, profession, sex, age, assembly, 
-  archive reference and page numbers where individual’s information can be found. 248 deaths was recorded in this particular data received.
-
+archive reference and page numbers where individual’s information can be found. 248 deaths was recorded in this particular data received.
+    
 
 
 Getting Started
@@ -25,6 +25,7 @@ Data Sources and Pre-processing
 1. Data Language conversion from Swedish to English:
 With Google Translate within Google Sheets, the raw data initially presented in Swedish was effectively translated into English, making it accessible and 
 comprehensible for analysis, reporting, or sharing with English-speaking stakeholders. This facilitated the utilization of the dataset in an English-speaking context.
+![1](images/1.png)
 
 2. Data Cleaning:
 The name and profession columns had a few foreign characters removed and cleaned. For instance: €, ™, ?, -, ©. Shortcut: CTRL H (find and replace) 
@@ -32,7 +33,8 @@ This formula finds a stated character (which appear to be the incorrect represen
 The age column was categorized to ensure easy and simplified visualization. The intention of this is also take care of clumsy data graphics. 
 Formula: =IF(E2>80,"Aged",IF(E2>60,"Old",IF(E2>40,"Adults",IF(E2>20,"Youth",IF(E2>=0,"Children"," "))))) 
 The assembly and archive reference column were removed by selecting, right clicking and deleting. Cleaned data:
-
+![2](images/2.png)
 
 3.. Data Visualization
 After importing and cleaning data in excel, I transferred to my POWERBI for visualization.
+![3](images/3.png)
